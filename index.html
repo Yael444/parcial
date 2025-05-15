@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimenez_1er_parcial_DMN3AV</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+     <header class="fixed-top">
+
+      <h1 id="logo">Emociones</h1>
+      <nav class="navbar" data-bs-theme="dark">
+       <div class="container-fluid">
+
+       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"   aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"> Inicio</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#felicidad"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Felicidad</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#tristeza"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Tristeza</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#enojo"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Enojo</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#miedo"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Miedo</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#disgusto"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" >Disgusto</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#verguenza"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Vergüenza</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#proyecto"> 
+             <span data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" > Sobre la página</span>
+            </a>
+          </li>
+
+         </ul>
+        </div>
+       </div>
+       </nav>
+
+     </header>
+
+     <main>
+
+        <section id="banner" class="container-fluid">         
+          <div class="d-flex flex-column justify-content-center align-items-center text-center p-5 h-100" >
+            <div class="w-75">
+              <h2 class="display-2 fw-bold text-white ">Explorando Nuestras Emociones</h2>
+              <p class="container-fluid pt-3 w-75">Las emociones forman parte de nuestra vida cotidiana. A través de esta página, podrás conocer las seis emociones básicas: qué significan, cómo se sienten y por qué son importantes. Comprenderlas es un paso esencial para conocernos mejor a nosotros mismos y a los demás.
+              </p>
+             </div>
+          </div>
+
+        </section >
+
+        <section id="emociones" class="w-100" >
+          <div class="row g-0 container-fluid">
+            <div id="lienzo" class="col-auto p-0"></div>
+            <section id="emocionestexto" class="col p-0">
+
+                <section id="felicidad"class="cajatexto p-5 text-center w-75 mx-auto d-flex flex-column align-items-center justify-content-center">
+                  <h3  class="display-4 fw-semibold ">Felicidad</h3>
+                  <p class="fst-italic fw-semibold">La alegría de vivir momentos positivos</p>
+                  <p >La <strong>felicidad</strong> es una emoción que experimentamos cuando nos sentimos plenos, seguros o cuando logramos algo que valoramos. Puede surgir en pequeños momentos cotidianos o en grandes logros. Nos impulsa a disfrutar la vida, fortalecer nuestros vínculos y a ser más generosos. Reconocer la felicidad nos permite cultivarla y compartirla con los demás, creando un entorno más saludable y positivo.</p>
+                </section>
+
+                <section id="tristeza" class="cajatexto p-5 text-center w-75 mx-auto d-flex flex-column align-items-center justify-content-center" >
+                  <h3 class="display-4 fw-semibold">Tristeza</h3>
+                  <p class="fst-italic fw-semibold">Una señal para detenernos y sanar</p>
+                  <p>La <strong>tristeza</strong> suele aparecer cuando perdemos algo importante o atravesamos situaciones difíciles. Nos invita a hacer una pausa, mirar hacia adentro y procesar lo que sentimos. Aunque es incómoda, es esencial para crecer emocionalmente. Aceptarla sin miedo y darle espacio nos ayuda a comprendernos y a reconstruirnos con mayor fortaleza.</p>
+                </section>
+
+                <section id="enojo" class="cajatexto p-5 text-center w-75 mx-auto d-flex flex-column align-items-center justify-content-center">
+                <h3 class="display-4 fw-semibold">Enojo</h3>
+                <p class="fst-italic fw-semibold">Una reacción ante lo que percibimos como injusto</p>
+                <p >El <strong>enojo</strong> es una emoción poderosa que nos indica que algo no está bien para nosotros. Puede aparecer cuando sentimos que nuestros derechos son vulnerados o cuando enfrentamos obstáculos que nos frustran. Bien gestionado, nos da energía para actuar, defendernos o cambiar una situación. Pero si lo reprimimos o lo desbordamos, puede hacernos daño a nosotros mismos o a los demás.</p>
+                </section>
+
+                <section id="miedo" class="cajatexto p-5 text-center w-75 mx-auto d-flex flex-column align-items-center justify-content-center">
+                <h3 class="display-4 fw-semibold">Miedo</h3>
+                <p class="fst-italic fw-semibold">Una alerta que busca protegernos</p>
+                <p>El <strong>miedo</strong> es una emoción ancestral que tiene una función clave: mantenernos a salvo. Nos prepara para reaccionar rápidamente ante posibles amenazas. Sin embargo, a veces también aparece ante desafíos nuevos o situaciones imaginarias. Aprender a diferenciar entre miedos reales e infundados nos ayuda a tomar decisiones más conscientes y valientes.</p>
+                </section>
+
+                <section id="disgusto" class="cajatexto p-5 text-center w-75 mx-auto d-flex flex-column align-items-center justify-content-center">
+                <h3 class="display-4 fw-semibold ">Disgusto</h3>
+                <p class="fst-italic fw-semibold">Una barrera natural ante lo que nos puede dañar.</p>
+                <p>El <strong>disgusto</strong> actúa como una señal de rechazo, ya sea hacia alimentos, situaciones o comportamientos que nos parecen inaceptables. Nos protege tanto física como emocionalmente. También puede reflejar valores personales o sociales, mostrándonos lo que no queremos tolerar. Entenderlo nos ayuda a conocernos mejor y a establecer nuestros propios límites.</p>
+                </section>
+
+                <section id="verguenza" class="cajatexto p-5 text-center w-75 mx-auto d-flex flex-column align-items-center justify-content-center">
+                  <h3 class="display-4 fw-semibold ">Vergüenza</h3>
+                  <p class="fst-italic fw-semibold">La emoción que refleja cómo nos vemos a través de otros</p>
+                  <p>La <strong>vergüenza</strong> aparece cuando creemos que hemos fallado ante los demás o que no cumplimos con ciertas normas. Nos puede hacer querer escondernos o evitar ser vistos. Aunque incómoda, nos ayuda a desarrollar empatía y sentido de pertenencia. Superarla implica aceptar nuestras imperfecciones y recordar que errar es parte de ser humanos.</p>
+                </section>    
+            </section>
+          </div>
+
+
+
+        </section>
+
+        <section id="alumna"></section>
+        
+     </main>
+   
+
+     <section id="proyecto"> 
+      
+     <h4 class="display-3 text-center p-5 text-white fw-semibold">Sobre la Página</h4>
+
+     <div class="container"> 
+
+        <div class=" w-75 card shadow cards m-5 mx-auto">
+          <div class="row g-0 p-3 align-items-center">
+
+            <figure class="col-3 h-100 mb-0 text-center text-start">
+              <img src="imagenes/foto_alumna.jpg" class="img-fluid rounded-circle p-1" alt="Foto de alumna">
+            </figure>
+
+            <div class="col-9">            
+              <div class="card-body p-2">
+                <div class="card-title">
+                  <div class="d-flex justify-content-between container-fluid">
+                     <p class=" row fw-medium h5 mb-0"> Gimenez Yael Brenda</p> <p class="fw-light mb-0">Alumna de Da Vinci</p>
+                    </div>
+                </div>
+                <p class="card-text mb-1">Esta página busca ayudarte a conocer las emociones básicas a través de imágenes y texto. Usando p5.js para dibujar rostros que representan cada emoción, utilizando formas simples como rectángulos, elipses y colores expresivos. 
+                  Los ojos animados fueron adaptados de un ejemplo de la página oficial de p5.js, dándoles vida y personalidad a cada cara.</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      
+      </div>
+     </section>  
+
+     <footer>
+       <div id="footer" class="container-fluid">
+         <div class="row p-5">
+          <div class="text-white text-center">  
+             <div id="footer_redes">
+                    <ul>
+                        <li><a href="https://www.youtube.com/?app=desktop&hl=es " target="_blank" title="Youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+                            <a href="https://www.instagram.com/" target="_blank" title="Instagram" ><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des " target="_blank" title="Tiktok"><ion-icon name="logo-tiktok"></ion-icon></a>
+                        </li>
+                    </ul>
+                    <p class="text-center text-white fw-light">emociones@caras.p5js</p>
+              </div>
+          
+              <figure>
+               <img class="text-center" src="./Imagenes/Logo_asterum-01.png" alt="Logo Emociones">
+              </figure>
+
+              <p>&copy; 2025 Emociones| Todos los derechos reservados</p> 
+              <p>Diseño Multimedial | Diseño y Programación Web I | Noche | DMN3AV | Profesor Medina Sergio Daniel | Segundo año| Mayo 2025  </p>
+            </div>
+          </div>
+       </div>
+     </footer>
+ 
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="sketch.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
